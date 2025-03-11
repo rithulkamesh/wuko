@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <!-- Box outline -->
+  <rect x="10" y="10" width="480" height="280" rx="10" ry="10" fill="#333" stroke="#000" stroke-width="2"/>
+  
+  <!-- Displays -->
+  <rect x="40" y="40" width="180" height="70" rx="5" ry="5" fill="#222" stroke="#444" stroke-width="2"/>
+  <rect x="280" y="40" width="180" height="70" rx="5" ry="5" fill="#222" stroke="#444" stroke-width="2"/>
+  <text x="130" y="80" text-anchor="middle" fill="#0ff" font-family="Arial" font-size="16">BANK 1</text>
+  <text x="130" y="100" text-anchor="middle" fill="#0ff" font-family="Arial" font-size="12">Patch: 1</text>
+  <text x="370" y="80" text-anchor="middle" fill="#0ff" font-family="Arial" font-size="16">MODULATION</text>
+  <text x="370" y="100" text-anchor="middle" fill="#0ff" font-family="Arial" font-size="12">Value: 64%</text>
+  
+  <!-- Potentiometers -->
+  <circle cx="100" cy="200" r="25" fill="#444" stroke="#666" stroke-width="2"/>
+  <circle cx="100" cy="200" r="20" fill="#333" stroke="#555" stroke-width="1"/>
+  <line x1="100" y1="200" x2="100" y2="180" stroke="#888" stroke-width="2"/>
+  <text x="100" y="240" text-anchor="middle" fill="white" font-family="Arial" font-size="12">MOD WHEEL</text>
+  
+  <circle cx="400" cy="200" r="25" fill="#444" stroke="#666" stroke-width="2"/>
+  <circle cx="400" cy="200" r="20" fill="#333" stroke="#555" stroke-width="1"/>
+  <line x1="400" y1="200" x2="400" y2="180" stroke="#888" stroke-width="2"/>
+  <text x="400" y="240" text-anchor="middle" fill="white" font-family="Arial" font-size="12">VOLUME</text>
+  
+  <!-- Patch buttons -->
+  <rect x="180" y="150" width="25" height="25" rx="3" ry="3" fill="#555" stroke="#777" stroke-width="2"/>
+  <rect x="220" y="150" width="25" height="25" rx="3" ry="3" fill="#555" stroke="#777" stroke-width="2"/>
+  <rect x="260" y="150" width="25" height="25" rx="3" ry="3" fill="#555" stroke="#777" stroke-width="2"/>
+  <rect x="300" y="150" width="25" height="25" rx="3" ry="3" fill="#555" stroke="#777" stroke-width="2"/>
+  <text x="192.5" y="166" text-anchor="middle" fill="white" font-family="Arial" font-size="12">1</text>
+  <text x="232.5" y="166" text-anchor="middle" fill="white" font-family="Arial" font-size="12">2</text>
+  <text x="272.5" y="166" text-anchor="middle" fill="white" font-family="Arial" font-size="12">3</text>
+  <text x="312.5" y="166" text-anchor="middle" fill="white" font-family="Arial" font-size="12">4</text>
+  <text x="250" y="190" text-anchor="middle" fill="white" font-family="Arial" font-size="12">PATCHES</text>
+  
+  <!-- Mode button -->
+  <rect x="220" y="220" width="60" height="25" rx="3" ry="3" fill="#664" stroke="#886" stroke-width="2"/>
+  <text x="250" y="236" text-anchor="middle" fill="white" font-family="Arial" font-size="12">MODE</text>
+  
+  <!-- Labels -->
+  <text x="40" y="30" fill="white" font-family="Arial" font-size="14">PATCH/BANK DISPLAY</text>
+  <text x="280" y="30" fill="white" font-family="Arial" font-size="14">PARAMETER DISPLAY</text>
+  
+  <!-- ESP32 inside -->
+  <rect x="20" y="260" width="80" height="20" rx="2" ry="2" fill="#050" stroke="#070" stroke-width="1"/>
+  <text x="60" y="274" text-anchor="middle" fill="white" font-family="Arial" font-size="10">ESP32-WROOM</text>
+</svg>

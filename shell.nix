@@ -14,7 +14,7 @@ pkgs.mkShell {
     python3Packages.setuptools
     python3Packages.wheel
 
-    # PlatformIO for ESP8266 development
+    # PlatformIO for ESP32 development
     platformio
 
     # Serial communication tools
@@ -39,7 +39,7 @@ pkgs.mkShell {
     echo "  - Adafruit SH110X"
     echo "  - MIDI Library"
     echo "  - Adafruit GFX Library"
-    echo "  - ESP8266 Core"
+    echo "  - ESP32 Core"
     echo ""
     echo "Use 'pio lib install <library_name>' to install required libraries"
     echo "Use 'pio run -t upload' to build and upload to your device"
