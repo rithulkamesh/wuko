@@ -1,75 +1,76 @@
-# MIDI ESP8266 Controller
+# Wuko
 
-This project is a MIDI macro controller built using the ESP8266 microcontroller. It features a couple of buttons, a B10K potentiometer, and an SH110X display. The main functionality includes sending MIDI Control Change (CC) signals, specifically for the mod wheel potentiometer.
-
-## Project Structure
-
-The project is organized as follows:
-
-```
-midi-esp8266-controller
-├── src
-│   ├── main.cpp          # Entry point of the application
-│   ├── display.cpp       # Implementation of display functionality
-│   ├── display.h         # Header for display class
-│   ├── buttons.cpp       # Implementation of button handling
-│   ├── buttons.h         # Header for buttons class
-│   ├── potentiometer.cpp  # Implementation for potentiometer reading
-│   ├── potentiometer.h    # Header for potentiometer class
-│   ├── midi.cpp          # Implementation of MIDI communication
-│   └── midi.h            # Header for MIDI class
-├── include
-│   └── config.h          # Configuration settings
-├── lib
-│   ├── README.md         # Documentation for libraries used
-│   └── placeholder.txt    # Placeholder for future library files
-├── test
-│   └── test_main.cpp     # Unit tests for main functionality
-├── platformio.ini        # PlatformIO configuration file
-├── shell.nix             # Development environment definition
-└── README.md             # Project documentation
-```
+Wuko is a DIY MIDI macro controller built with ESP32, designed for musicians and producers who need customizable MIDI control capabilities in a compact package.
 
 ## Features
 
-- **MIDI Control Change**: Sends CC signals on channel 1 for the mod wheel potentiometer.
-- **User Interface**: Utilizes buttons for user interaction and an SH110X display for visual feedback.
-- **Modular Design**: Each component (display, buttons, potentiometer, MIDI) is encapsulated in its own class for better maintainability.
+- **Customizable MIDI Controls**: Configure buttons for various MIDI commands
+- **Potentiometer Input**: B10K potentiometer for continuous controller data (CC), specifically mapped to modulation wheel
+- **Display Feedback**: SH110X OLED display for visual feedback and configuration
+- **Wired Connection**: Reliable USB MIDI connection to your computer or other MIDI devices
+- **Open Source**: Fully customizable hardware and software
 
-## Setup Instructions
+## Hardware Requirements
 
-1. **Clone the Repository**: 
-   ```
-   git clone <repository-url>
-   cd midi-esp8266-controller
-   ```
+- ESP32 microcontroller
+- SH110X OLED display
+- Push buttons (for MIDI macros)
+- B10K potentiometer
+- PCB (design files included in wuko-pcb)
+- USB cable for power and data
 
-2. **Install Dependencies**: 
-   Use Nix to set up the development environment:
+## Getting Started
+
+### Development Environment Setup
+
+This project uses Nix for dependency management. To set up the development environment:
+
+1. Install Nix if you don't have it already
+2. Clone this repository
+3. Enter the development environment:
    ```
+   cd wuko
    nix-shell
    ```
+   The shell.nix file will automatically set up all required dependencies.
 
-3. **Build the Project**: 
-   Use PlatformIO to build the project:
-   ```
-   pio run
-   ```
+### Building and Flashing
 
-4. **Upload to ESP8266**: 
-   Connect your ESP8266 and upload the firmware:
-   ```
-   pio run --target upload
-   ```
+This project uses PlatformIO for building and uploading
+
+```
+# Install Requirements
+
+pio pkg install
+
+# Build the project
+pio run
+
+# Upload to connected device
+pio run -t upload
+
+# Monitor serial output
+pio device monitor
+```
 
 ## Usage
 
-Once uploaded, the device will initialize the display and buttons. The potentiometer can be adjusted to send MIDI Control Change messages, which can be received by any compatible MIDI device or software.
+After flashing your Wuko device:
 
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
+1. Connect it to your computer or MIDI device via USB
+2. The device will appear as a USB MIDI device
+3. The potentiometer controls the modulation wheel (CC #1) on MIDI channel 1
+4. Buttons can be programmed to send various MIDI commands
+5. The OLED display shows the current status and configuration
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE.md file for details.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+## Author
+
+© 2025 Rithul Kamesh
