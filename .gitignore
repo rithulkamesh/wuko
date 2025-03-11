@@ -1,3 +1,43 @@
-.pio
-.vscode
-wuko-pcb-backups
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# KiCad backup files
+wuko-pcb-backups/
+*-backups/
+*-cache
+*-cache.lib
+*.bak
+fp-info-cache
+
+# Build outputs
+*.elf
+*.hex
+*.bin
+
+# Debugging files
+*.gdb_history
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Nix
+result
+result-*
