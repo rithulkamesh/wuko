@@ -4,7 +4,7 @@ Wuko is a DIY MIDI macro controller built with ESP32, designed for musicians and
 
 ## Project Mockup
 
-<img src="./mockup.svg" alt="Wuko Controller Mockup" width="400" />
+<img src="./mockup.svg" align="center" alt="Wuko Controller Mockup" width="400" />
 
 ## Features
 
