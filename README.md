@@ -28,7 +28,7 @@ This project uses Nix for dependency management. To set up the development envir
 1. Install Nix if you don't have it already
 2. Clone this repository
 3. Enter the development environment:
-   ```
+   ```sh
    cd wuko
    nix-shell
    ```
@@ -38,9 +38,8 @@ This project uses Nix for dependency management. To set up the development envir
 
 This project uses PlatformIO for building and uploading
 
-```
+```sh
 # Install Requirements
-
 pio pkg install
 
 # Build the project
@@ -73,4 +72,4 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## Author
 
-© 2025 Rithul Kamesh
+&copy; 2025-Present Rithul Kamesh
